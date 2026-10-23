@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta charset="UTF-8">
+<meta name="ad.size" content="width=300,height=600">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=300,initial-scale=1">
+<link rel="icon" href="data:,">
+<title>RenovoRx, Inc. — Investor Relations</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--
+  RenovoRx, Inc. — IR display banner, 300x600 — Concept D: Corporate site / brand-native.
+  Promotes: https://renovorx-ir-concept.netlify.app/
+  Styled from the company's own CORPORATE website (https://renovorx.com/), not the IR
+  landing page that Concepts A-C are built from: its navy header + white logo lockup,
+  light DM Sans type, blue-gradient hero over the RenovoCath render, black IV-vs-TAMP
+  body-figure section, white image + text split, and pill button. "Homepage in miniature":
+  each slide is one module of renovorx.com's homepage:
+    1 hero -> 2 IV-vs-TAMP comparison -> 3 image + text split -> 4 blue band.
+  Module classes (m-hero / m-bodies / m-split / m-band) and the shared parts (d-stat,
+  d-list, d-arrows) live in style.css; every colour is a :root token filled from
+  brand.json "corp". Photos and the logo are the site's own files, cropped into assets/.
+  Every claim comes from the project fact sheet (.tmp/facts.md), never from the
+  homepage's patient-facing copy.
+-->
+
+<div id="banner" aria-label="RenovoRx, Inc. investor relations advertisement">
+
+  <div id="slides">
+
+    <!-- Slide 1 — Overview -->
+    <section class="slide m-hero" data-index="0">
+      <!-- Module: corporate homepage hero: the blue RenovoCath render (blue-renovocath-in-action) under the
+           site's #001E42 navy gradient, light DM Sans title with the italic "where it matters." and ™.
+           Facts: [CORP] tagline; [PR171][DECK] ~$400M est. peak U.S. device opportunity (mgmt. estimate), 900+ procedures. -->
+      <img class="d-photo" src="assets/slide-1.jpg" alt="Illustration of the RenovoCath catheter inside an artery beside a tumor, rendered in blue">
+      <div class="hero-panel">
+        <h2>Delivering therapy <em>where it matters.</em><sup>™</sup></h2>
+        <p class="hero-desc">A commercial-stage targeted oncology company. <span class="nw">FDA-cleared</span> RenovoCath® enables its patented <span class="nw">TAMP™</span> platform.</p>
+        <div class="d-stats">
+          <div class="d-stat">
+            <p class="d-value">~$400M</p>
+            <p class="d-label">Mgmt.-estimated peak annual U.S. device sales</p>
+          </div>
+          <div class="d-stat">
+            <p class="d-value">900+</p>
+            <p class="d-label">RenovoCath procedures to date</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 2 — Platform -->
+    <section class="slide m-bodies" data-index="1">
+      <!-- Module: corporate homepage "IV chemotherapy vs. TAMP" section (black, blue light-weight headings,
+           white 500 copy, the two body figures Body-IV-Chemo-V8 / Body-TAMP-V8).
+           Facts: [PR170] TAMP is "designed to deliver chemotherapy directly near the tumor site while potentially
+           reducing systemic exposure"; [DECK p.17] mechanism for IAG is theoretical, hence "designed to" + illustrative tag. -->
+      <h2 class="bodies-title">Two Ways to Deliver Chemotherapy</h2>
+      <p class="illus">Illustrative image</p>
+      <div class="bodies-cols">
+        <div class="bodies-col">
+          <h3>Intravenous (IV) Chemotherapy</h3>
+          <p>Circulates through the bloodstream, exposing the entire body to the drug.</p>
+          <div class="bodies-fig"><img src="assets/body-iv.jpg" alt="Illustration of a human body with IV chemotherapy circulating through the whole vascular system"></div>
+        </div>
+        <div class="bodies-col">
+          <h3>Trans-Arterial Micro-Perfusion (<span class="nw">TAMP™</span>)</h3>
+          <p>Designed to deliver chemotherapy directly near the tumor, potentially reducing total body exposure.</p>
+          <div class="bodies-fig"><img src="assets/body-tamp.jpg" alt="Illustration of a human body with a catheter delivering chemotherapy near the pancreas"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 3 — Commercial traction + financials -->
+    <section class="slide m-split" data-index="2">
+      <!-- Module: corporate homepage white split ("TAMP is an innovative drug-delivery platform…"), stacked for
+           portrait: the RenovoCath product photograph over the white card, blue light-weight h2 + bar,
+           grey bullet dots, <hr>, blue-arrow sub-bullets.
+           Facts: [PR171] 21 active centers (Aug 12 2026), 63 funnel, 900+ procedures, Q2 $909K +115%, guidance
+           $3.75M–$4.25M raised from $3.0M–$4.0M, gross margin 84.3%, net loss ~$2.9M. -->
+      <figure class="split-fig">
+        <img class="split-photo" src="assets/slide-3.jpg" alt="RenovoCath catheter photographed on a light background">
+      </figure>
+      <div class="split-card">
+        <h2>RenovoCath® Is Already in Use at Cancer Centers</h2>
+        <ul class="d-list">
+          <li>An FDA-cleared drug-delivery catheter, sold to U.S. cancer centers.
+            <ul class="d-arrows">
+              <li>21 active commercial centers (Aug&nbsp;12, 2026)</li>
+              <li>63 centers in the commercial funnel</li>
+            </ul>
+          </li>
+        </ul>
+        <hr class="d-rule">
+        <ul class="d-list">
+          <li>Record Q2 2026 revenue of $909K, up 115% year over year.
+            <ul class="d-arrows">
+              <li>2026 revenue guidance raised to $3.75M–$4.25M</li>
+              <li>Q2 gross margin 84%; net loss $2.9M</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Slide 4 — Catalyst: the pivotal Phase III trial -->
+    <section class="slide m-band" data-index="3">
+      <!-- Module: corporate homepage blue band ("Take the Next Step": #003D82 gradient over imagery, light-weight
+           title, white copy): the TAMP close-up render (Renovo-Tamp-Closeup-V8) under the blue gradient.
+           Facts: [PR170][PR171] full enrollment Aug 2026; 78 of 86 events as of Aug 11 2026; completion 1H 2027;
+           topline 2H 2027; primary endpoint overall survival; IAG investigational vs standard IV gemcitabine + Abraxane. -->
+      <img class="d-photo" src="assets/slide-4.jpg" alt="Illustration of a catheter delivering chemotherapy, shown in green, to the pancreas">
+      <div class="band-content">
+        <h2>Pivotal Phase III Trial Fully Enrolled</h2>
+        <p class="band-desc">TIGeR-PaC is evaluating investigational intra-arterial gemcitabine (<span class="nw">IAG</span>) vs. standard IV chemotherapy in locally advanced pancreatic cancer.</p>
+        <div class="d-stats">
+          <div class="d-stat">
+            <p class="d-value">78/86</p>
+            <p class="d-label">Trial events observed, Aug&nbsp;11, 2026</p>
+          </div>
+          <div class="d-stat">
+            <p class="d-value">1H 2027</p>
+            <p class="d-label">Trial completion expected</p>
+          </div>
+          <div class="d-stat">
+            <p class="d-value">2H 2027</p>
+            <p class="d-label">Topline data expected</p>
+          </div>
+        </div>
+        <p class="band-note">Primary endpoint: overall survival.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Persistent chrome — the corporate site's navy header, never rotates -->
+  <header id="top-bar" class="reveal" data-delay="0">
+    <img id="logo" src="assets/logo.png" alt="RenovoRx" width="128" height="20">
+    <span id="ticker">NASDAQ:&nbsp;RNXT</span>
+  </header>
+
+  <!-- Slider controls: round navy buttons, like the site's carousel arrows -->
+  <button type="button" class="nav-arrow" id="arrow-prev" aria-label="Previous slide">
+    <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3 6 8l4 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <button type="button" class="nav-arrow" id="arrow-next" aria-label="Next slide">
+    <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3l4 5-4 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <div id="bottom-fixed" class="reveal" data-delay="4">
+    <div id="dots" role="tablist" aria-label="Slide selector">
+      <button class="dot active" data-index="0" aria-label="Slide 1: Overview"></button>
+      <button class="dot" data-index="1" aria-label="Slide 2: IV vs. TAMP delivery"></button>
+      <button class="dot" data-index="2" aria-label="Slide 3: Commercial traction"></button>
+      <button class="dot" data-index="3" aria-label="Slide 4: Phase III trial"></button>
+    </div>
+
+    <!-- The corporate site's pill .btn: gradient border, arrow after the label -->
+    <a href="#" id="cta">
+      <span>Investor Relations</span>
+      <svg id="cta-arrow" viewBox="0 0 24 25" aria-hidden="true"><path d="M12 4.18066L10.585 5.59566L16.17 11.1807H4V13.1807H16.17L10.585 18.7657L12 20.1807L20 12.1807L12 4.18066Z"/></svg>
+    </a>
+
+    <!-- The corporate site's footer strip, carrying the required forward-looking-statements line -->
+    <p id="fls">Forward-looking: trial timing, 2026 guidance, market estimate. IAG is investigational, not FDA-approved. See SEC filings.</p>
+  </div>
+
+  <!-- Standard HTML5-ad click-tag plumbing -->
+  <div id="click-tag-wrapper"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
